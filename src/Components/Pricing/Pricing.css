@@ -1,0 +1,143 @@
+.priceContainer {
+  width: 100%;
+}
+
+/* Pricing background Section */
+.priceContainer .pricingContainer {
+  width: 90%;
+  margin: auto;
+  background-image: url("../../Images/blogBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 30vh;
+  margin-top: 70px;
+  border-radius: 40px;
+}
+
+.priceContainer .pricingContainer h1 {
+  text-align: center;
+  padding-top: 80px;
+}
+/* End Of Pricing Background Section */
+
+/* Payment Services Section */
+.priceContainer .paymentServicesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  padding: 10px;
+  place-items: center;
+  align-items: center;
+}
+
+.priceContainer .paymentServicesContainer .card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.priceContainer .paymentServicesContainer .card .image {
+  width: 80%;
+  margin: auto;
+}
+
+.priceContainer .paymentServicesContainer .card .image .package {
+  width: 100%;
+}
+
+.priceContainer .paymentServicesContainer .card .month {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.priceContainer .paymentServicesContainer .card .items {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.priceContainer .paymentServicesContainer .card .btn {
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.priceContainer .paymentServicesContainer .card .btn .click {
+  width: 80%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.priceContainer .paymentServicesContainer .card .btn button {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #231656;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .priceContainer .paymentServicesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+    place-items: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 775px) {
+  .priceContainer .paymentServicesContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+    place-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .priceContainer .paymentServicesContainer .card {
+    padding: 10px;
+  }
+  .priceContainer .paymentServicesContainer .card .image {
+    width: 95%;
+    margin: auto;
+  }
+  .priceContainer .paymentServicesContainer .card .month {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .priceContainer .paymentServicesContainer .card .items {
+    width: 95%;
+    margin: auto;
+    padding: 15px;
+  }
+}
+/* End Of Payment Services Section */

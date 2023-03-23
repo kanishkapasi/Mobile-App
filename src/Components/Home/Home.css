@@ -1,0 +1,452 @@
+.homeContainer {
+  width: 100%;
+}
+
+/* First Section */
+
+.homeContainer .hContainer {
+  background-image: url("../../Images/bg.jpg");
+  padding-top: 200px;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.homeContainer .hContainer h1 {
+  font-size: 70px;
+  padding: 20px;
+}
+
+.homeContainer .hContainer .btn {
+  background-color: #231656;
+  color: white;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .homeContainer .hContainer h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .homeContainer .hContainer h1 {
+    font-size: 43px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homeContainer .hContainer h1 {
+    font-size: 40px;
+  }
+}
+
+/* End Of First Section */
+
+/* Mobile Section */
+.homeContainer .mobileContainer {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.homeContainer .mobileContainer .left {
+  padding: 10px;
+}
+
+.homeContainer .mobileContainer .left .mbl {
+  width: 350px;
+  height: 500px;
+}
+
+.homeContainer .mobileContainer .right {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homeContainer .mobileContainer .right .v {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 570px) {
+  .homeContainer .mobileContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeContainer .mobileContainer .right {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .homeContainer .mobileContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeContainer .mobileContainer .right {
+    justify-content: center;
+  }
+}
+/* End Of Mobile Section */
+
+/* Third Section */
+.cardContainer {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  height: 50vh;
+  margin-top: 120px;
+}
+
+.cardContainer .card {
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 688px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+/* End Of Third Section */
+
+/* Payment Section */
+.paymentContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.paymentContainer .left {
+  padding: 10px;
+}
+
+.paymentContainer .right {
+  padding: 10px;
+}
+
+.paymentContainer .right .pay {
+  width: 400px;
+  height: 600px;
+}
+
+.paymentContainer .left .play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px;
+}
+
+.paymentContainer .left .playBtn {
+  transition: all 0.4s;
+  width: 100px;
+  height: 100px;
+}
+
+.paymentContainer .left .playBtn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 875px) {
+  .paymentContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .paymentContainer .right {
+    margin: auto;
+  }
+  .paymentContainer .left {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .paymentContainer .left .play {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .paymentContainer .right .pay {
+    width: 300px;
+    height: 500px;
+  }
+}
+/* End OF Payment Section */
+
+/* User Count Section */
+.countContainer {
+  width: 100%;
+  /* background-color: #d8d8d8; */
+}
+
+.countContainer .uContainer {
+  width: 90%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 2rem;
+}
+
+.countContainer .uContainer .cards {
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+  width: 60%;
+  transition: all 0.4s;
+}
+
+.countContainer .uContainer .cards:nth-child(1) {
+  background-image: linear-gradient(to bottom, #ff2323, #f6d38c);
+  color: white;
+}
+
+.countContainer .uContainer .cards:nth-child(2) {
+  background-image: linear-gradient(to bottom, #f54bc3, #faa5e2);
+  color: white;
+}
+.countContainer .uContainer .cards:nth-child(3) {
+  background-image: linear-gradient(to bottom, #5b32ff, #8fdbf4);
+  color: white;
+}
+.countContainer .uContainer .cards:hover {
+  transform: scaleX(1.15) scaleY(1.15);
+  cursor: pointer;
+}
+.countContainer .uContainer .cards h5 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 835px) {
+  .countContainer .uContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .countContainer .uContainer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    place-items: center;
+  }
+}
+/* End OF User Count Section */
+
+/* Rate Section */
+.rateContainer {
+  width: 90%;
+  height: 100%;
+  background-image: url("../../Images/ratebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  margin: auto;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.rateContainer .rContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+}
+
+.rateContainer .rContainer .cards {
+  width: 70%;
+  margin-top: 30px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.rateContainer .rContainer .cards .top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.rateContainer .rContainer .cards .top .tCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 719px) {
+  .rateContainer .rContainer .cards {
+    width: 95%;
+  }
+  .rateContainer .rContainer .cards .top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .rateContainer .rContainer .cards .top .tCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+}
+/* End Of rate Section */
+
+/* Credit Section */
+.creditContainer {
+  width: 100%;
+  background-color: #303030;
+  height: 100%;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.creditContainer .credit {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.creditContainer .credit .right {
+  padding: 10px;
+}
+
+.creditContainer .credit .left {
+  padding: 10px;
+  width: 450px;
+}
+
+.creditContainer .credit .left h2 {
+  font-size: 40px;
+  color: #8c8c8c;
+}
+
+.creditContainer .credit .left .correct .tiks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: #8c8c8c;
+}
+
+.creditContainer .credit .left .correct .tiks p {
+  margin-top: 10px;
+}
+.creditContainer .credit .right .creditIcon {
+  width: 600px;
+  height: 400px;
+}
+
+@media screen and (max-width: 1077px) {
+  .creditContainer .credit {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+  }
+  .creditContainer .credit .right {
+    margin: auto;
+  }
+  .creditContainer .credit .left {
+    margin: auto;
+    text-align: center;
+  }
+  .creditContainer .credit .left .correct .tiks {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .creditContainer .credit .right .creditIcon {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .creditContainer {
+    width: 100%;
+    background-color: #303030;
+    height: 100%;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  .creditContainer .credit .right .creditIcon {
+    width: 300px;
+    height: 250px;
+  }
+  .creditContainer .credit .left {
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .creditContainer .credit .right .creditIcon {
+    width: 250px;
+    height: 220px;
+  }
+  .creditContainer .credit .left {
+    padding: 10px;
+    width: 90%;
+  }
+}
+/* End Of Credit Section */

@@ -1,0 +1,114 @@
+.footerContainer {
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 100%;
+  padding: 10px;
+  margin-top: 80px;
+}
+
+/* Search Section */
+.footerContainer .searchContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 90%;
+  background-image: url("../../Images/search.png");
+  margin: auto;
+  padding: 20px;
+  height: 20vh;
+  margin-top: 100px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.footerContainer .searchContainer .inp {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footerContainer .searchContainer .inp .input {
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.footerContainer .searchContainer .inp button {
+  background-color: #231656;
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.4s;
+  height: 40px;
+}
+
+.footerContainer .searchContainer .inp button:hover {
+  box-shadow: 0px 0px 15px white;
+  transform: scaleX(1.15) scaleY(1.15);
+}
+
+@media screen and (max-width: 1050px) {
+  .footerContainer .searchContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+  .footerContainer .searchContainer .inp .btn {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .footerContainer .searchContainer .inp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerContainer .searchContainer .inp button {
+    height: 40px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .footerContainer .searchContainer .inp {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerContainer .searchContainer .inp .input {
+    width: 100%;
+  }
+} /* End OF Search Container */
+
+.footerContainer .fContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.footerContainer .fContainer .secondSection .links {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+  .footerContainer .fContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 20px;
+  }
+}
